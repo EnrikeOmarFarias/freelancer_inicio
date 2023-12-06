@@ -8,12 +8,6 @@
 
 /*para comentar en css */
 
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
-}
-
 html {
   font-size: 62.5%;
   box-sizing: border-box;
@@ -197,9 +191,6 @@ h3 {
   color: var(--primario);
 }
 
-.contenedor-campos {
-}
-
 .campos {
   margin-bottom: 1rem;
 }
@@ -227,7 +218,11 @@ h3 {
   text-align: center;
 }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
+  .servicio {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 @media (max-width: 480px) {
